@@ -16,10 +16,3 @@ An online multiplayer Tic Tac Toe build using Node.js, Express.js and Socket.io.
 4. Run **npm install** to install dependencies defined in package.json.
 5. Run nodemon index.js
 6. Visit **http://localhost:2000** on your browser
-
-  
-# Latest Deployed Version :triangular_flag_on_post:
-* https://tic-tac-toe-by-pb.herokuapp.com/
-
-
-## Share with your friends & enjoy! 😃
