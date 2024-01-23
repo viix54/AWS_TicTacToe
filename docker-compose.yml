@@ -1,0 +1,8 @@
+services:
+  compose_app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "2000:2000"
+    container_name: tic_tac_toe

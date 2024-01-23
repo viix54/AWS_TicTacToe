@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TIC TAC TOE</title>
+        <meta charset="UTF-8">
+        <meta name="viewport"  content="width=device-width, initial-scale=1.0">
+        <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.3.0/socket.io.dev.js"></script>
+		<link href='https://fonts.googleapis.com/css?family=Paprika' rel='stylesheet'>
+		<link rel="icon" type="image/png" href="icon/icon.png">
+        <link rel="stylesheet" type="text/css" href="style.css">
+
+        <!-- <script src="node_modules/amazon-cognito-identity-js/dist/amazon-cognito-identity.min.js"></script> -->
+        
+        <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/aws-sdk/2.1531.0/aws-sdk.min.js"></script>-->
+        <!-- <script src="https://unpkg.com/browse/amazon-cognito-identity-js@3.0.14/dist/amazon-cognito-identity.min.js"></script>  -->
+        <script src="https://cdn.jsdelivr.net/npm/amazon-cognito-identity-js@6.3.7/dist/amazon-cognito-identity.min.js"></script>
+    </head>
+    <body >
+        <button class="login_btn" onclick="login()">Log in </button>
+        <div class="start-playing" style="display: none;">
+                <h2 id="turn">Waiting for another crew member to join ...</h2>
+                <div class= "board">
+					<button id="a0"></button>
+					<button id="a1"></button>
+					<button id="a2"></button>
+					<button id="b0"></button>
+					<button id="b1"></button>
+					<button id="b2"></button>
+					<button id="c0"></button>
+					<button id="c1"></button>
+					<button id="c2"></button>
+                </div>
+        </div>
+        <div class="score__table" style="display:flex; flex-direction: column; align-items: center;color: white;align-content: space-between;">
+            <h2 style="color:white;margin-top: 70px;">Score Table</h2>
+            <table class="table" style="height:200px;border-spacing:30px 10px;display: flex; flex-direction: column; align-items: center;justify-content: center;" >
+                <tbody id="tables__body">
+                  <!-- <tr>
+                    <th scope="row">1</th>
+                    <td>Mark</td>
+                    <td style="color: lightgreen;">10 wins</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">2</th>
+                    <td>Jacob</td>
+                    <td style="color: yellow;">9 wins</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">3</th>
+                    <td>Ivan</td>
+                    <td style="color: red;">8 wins</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">4</th>
+                    <td>Max</td>
+                    <td>7 wins</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">5</th>
+                    <td>Ivan2</td>
+                    <td>6 wins</td>
+                  </tr> -->
+                  
+                </tbody>
+              </table>
+        </div>
+        <div style="position: absolute;right: 0px;top: 0px;">
+            <div class="miniScore__table" style="background-color:#40E0D0;display:flex; flex-direction: column; align-items: center;color: white;">
+                <h2 style="color:white;margin-top: 70px;">Score Table</h2>
+                <table class="table__score" style="height:200px;border-spacing:30px 10px;display: flex; flex-direction: column; align-items: center;justify-content: center;" >
+                    <tbody id = "miniTable__body">
+                    <!-- <tr>
+                        <th scope="row">1</th>
+                        <td>Mark</td>
+                        <td style="color: lightgreen;">10 wins</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">2</th>
+                        <td>Jacob</td>
+                        <td style="color: yellow;">9 wins</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">3</th>
+                        <td>Ivan</td>
+                        <td style="color: red;">8 wins</td>
+                    </tr>                     -->
+                    </tbody>
+                </table>
+            </div>
+        </div>    
+    </body>
+	<script type="text/javascript" src="client.js"></script>
+</html>

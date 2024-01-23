@@ -1,0 +1,25 @@
+{
+  "name": "mulltiplayer",
+  "version": "1.0.0",
+  "description": "multiplayer tic tac toe",
+  "main": "server.js",
+  "dependencies": {
+    "amazon-cognito-identity-js": "^6.3.7",
+    "aws-sdk": "^2.1167.0",
+    "axios": "^1.6.5",
+    "cookie-parser": "^1.4.6",
+    "express": "^4.17.1",
+    "jose": "^5.2.0",
+    "jsonwebtoken": "^9.0.2",
+    "jwk-to-pem": "^2.0.5",
+    "mysql2": "^3.7.0",
+    "nodemon": "^2.0.4",
+    "socket.io": "^2.3.0"
+  },
+  "scripts": {
+    "start": "node server.js",
+    "nm": "nodemon ./server.js localhost 2000"
+  },
+  "author": "Pranjali Bajpai",
+  "license": "ISC"
+}
