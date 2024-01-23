@@ -2,12 +2,7 @@
 
 An online multiplayer Tic Tac Toe build using Node.js, Express.js and Socket.io.
 
-
-# Preview :rocket:
-
-![demo](https://github.com/pranjalibajpai/Multiplayer-Tic-Tac-Toe/blob/master/demo-game.gif)
-  
-  
+ 
 # How to run locally :computer:
 
 1. Install [Node.JS](http://nodejs.org/).  
